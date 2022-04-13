@@ -1,0 +1,29 @@
+#loading {
+    width: 100vw;
+    height: 100vh;
+    transition: all 1s;
+    background-color: $bg-color;
+   
+  /* 以下のコードを追加 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    .spinner{
+        position: fixed;
+        width: 70px;
+        height: 70px;
+        top:calc(50% - 70px/2);
+        left:calc(50% - 70px/2);
+        transform: translate(-50%, -50%);
+        border: 5px solid $text-color;
+        border-left-color: transparent;
+        border-radius: 50%;
+        animation: spin 0.5s linear infinite;
+    }
+  }
+
+  .loaded {
+    opacity: 0;
+    visibility: hidden;
+  }

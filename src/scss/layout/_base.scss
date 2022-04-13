@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: $bg-color;
+}
+
+.l-container{
+    width: 90%;
+    padding: 40px 0;
+    margin: auto;
+    overflow-x: hidden;
+    @media screen and (min-width: $sp-width){
+        width: 1000px;
+        padding: 60px 0;
+    }
+}
+
+main{
+    flex-basis: 1;
+    height: auto;
+}
+
+h1, h2, h3, p, ul, ol{
+    color: $text-color;
+}

@@ -1,0 +1,10 @@
+.article{
+    margin: 0;
+    @media screen and (min-width: $sp-width){
+        margin: 0 150px 100px;
+    }
+    &-body{
+        color: $text-color-article;
+        
+    }
+}

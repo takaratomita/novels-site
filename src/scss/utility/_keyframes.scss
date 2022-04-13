@@ -1,0 +1,92 @@
+@keyframes slide {
+    from{
+        opacity: 0;
+        transform: scale(1.3);
+    }
+    10%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    95%{
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes slide-text {
+    from{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+        transform: scale(1.2);
+    }
+    30%{
+        opacity: 1;
+        transform: scale(1.3);
+    }
+    to{
+        transform: scale(1.3);
+
+    }
+}
+
+@keyframes slide-btn {
+    from{
+        display: none;
+        transform: translateY(120px);
+    }
+    30%{
+        opacity: 0;
+        display: block;
+        transform: translateY(120px);
+
+    }
+    40%{
+        transform: translateY(100px);
+    }
+    50%{
+        opacity: 1;
+        user-select: inherit;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes sp-slide-btn {
+    from{
+        display: none;
+        transform: translateY(150px);
+    }
+    30%{
+        opacity: 0;
+        display: block;
+        transform: translateY(150px);
+
+    }
+    40%{
+        transform: translateY(130px);
+    }
+    50%{
+        opacity: 1;
+        user-select: inherit;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes spin{
+    from{
+        transform: none;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

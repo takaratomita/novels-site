@@ -1,0 +1,16 @@
+body{
+    font-family: $base-font;
+}
+
+.page-ttl{
+    text-align: center;
+    color: $text-color;
+    font-family: 'M PLUS 1p', sans-serif;
+    margin-bottom: 20px;
+    &.page-ttl_underlay{
+        font-family: $base-font;
+        font-weight: normal;
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+}

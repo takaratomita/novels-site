@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* normalize, 変数(for Sass) */
+// @import 'variables/**';
+
+/* mixin(for Sass) */
+// @import 'mixins/**';
+
+/* ユーティリティ(color, size, spacing, etc.) */
+@import 'utility/**';
+/* ベースの要素スタイル */
+
+@import 'layout/**';
+
+/* ライブラリ */
+// @import 'library/**';
+
+
+/* コンポーネント */
+@import 'component/**';
+
+/* 共通レイアウト(header, footer, etc.) */
+@import "common/**";
+
+/* ページごとのスタイル */
+@import 'page/**';
+
+

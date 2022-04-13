@@ -1,0 +1,23 @@
+.edit{
+    .edit_list{
+        display: block;
+        width: clamp(400px, 50vw, 800px);
+        margin: 0 auto;
+        li{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            .edit-btns{
+                display: flex;
+                margin-left: 20px;
+                form:first-child{
+                    margin-right: 20px;
+                }
+            }
+            .btn{
+                margin-bottom: 0;
+            }
+        }
+    }
+}

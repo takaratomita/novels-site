@@ -1,0 +1,43 @@
+.novel{
+    .sp-control-btns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media screen and (min-width: $sp-width){
+            display: none;
+        }
+        .btn button, .btn a{
+            font-size: 16px;
+            padding: 7px 15px;
+            margin: 0 10px;
+            font-family: $base-font;
+        }
+    }
+    .control-btns{
+        justify-content: center;
+        align-items: center;
+        display: none;
+        @media screen and (min-width: $sp-width){
+            display: flex;
+        }
+        a,input{
+            display: inline-block;
+            margin: 20px;
+            font-size: 14px;
+            opacity: 1;
+        }
+    }
+    .non-select{
+        input, button{
+            pointer-events: none;
+            cursor: auto;
+            user-select: none;
+            border: solid 1px lightgray;
+            color: lightgray;
+            &:hover{
+                color: lightgray;
+                background-color: transparent;
+            }
+        }
+    }
+}

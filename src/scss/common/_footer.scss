@@ -1,0 +1,17 @@
+footer{
+    height: 50px;
+    border-top: $text-color 2px solid;
+    margin-top: 60px;
+    text-align: center;
+    background-color: $header-color;
+
+    p{
+        font-weight: bold;
+        line-height: 50px;
+        color: $text-color;
+        font-size: 0.8em;
+        @media screen and (min-width: $sp-width){
+            font-size: 1em;
+        }
+    }
+}

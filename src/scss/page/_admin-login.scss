@@ -1,0 +1,24 @@
+.p-admin-login{
+    background-color: $bg-color;
+    height: 100vh;
+    .admin-form_wrapper{
+        border: $text-color 1px solid;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        padding: 30px;
+        min-width: 300px;
+        width: 30%;
+        .admin-form{
+            text-align: center;
+            input[type="text"],input[type="password"]{
+                margin-bottom: 20px;
+                background-color: $f__input_bg-color;
+                &:focus{
+                    outline: $text-color 1px solid;
+                }
+            }
+        }
+    }
+}

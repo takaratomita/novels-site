@@ -1,0 +1,56 @@
+.admin_nav{
+    position: fixed;
+    color: $text-color;
+    margin: 3vh;
+    @media screen and (min-width: $sp-width){
+        top: 20px;
+        left: 5vw;
+    }
+    .l-container{
+        display: block;
+        margin: 0 auto;
+    }
+    .nav_list{
+        width: 80px;
+        display: flex;
+        flex-direction: column;
+        .menu-1 {
+            cursor: pointer;
+            transition: all ease 0.3s;
+            border-bottom: 1px solid $text-color;
+            .nav_list-2{
+                display: none;
+                opacity: 0;
+                flex-direction: column;
+                font-size: 14px;
+                margin-left: 10px;
+                li{
+                    border-bottom: 1px dotted $text-color;
+                    margin-bottom: 10px;
+                    a{
+                        padding: 10px;
+                        color: $text-color2;
+                    }
+                }
+        }
+        }
+        .menu-1:hover{
+            color: $bg-color;
+            background-color: $hover-bg-color;
+            border-color: $text-color;
+            .nav_list-2{
+                display: flex;
+                transition: all ease 0.3s;
+                opacity: 1;
+                position: absolute;
+                transform: translate(70px, -25px);
+                padding-left: 10px;
+                color: $text-color;
+                background-color: $hover-bg-color;
+                a:hover{
+                    color: $hover-color;
+                }
+            }
+        }
+    }
+}

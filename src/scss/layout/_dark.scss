@@ -1,0 +1,31 @@
+body.dark-mode{
+    background-color: $bg-color_dark !important;
+    header, footer, .l-container{
+        background-color: $bg-color_dark !important;
+    }
+    .article p{
+        color: $text-color_dark !important;
+    }
+    .header-config{
+        background-color: transparent !important;
+    }
+    .header-config_menu{
+        top: 75px;
+        background-color: transparent !important;
+        border-bottom: none !important;
+        border-left: $text-color 1px solid;
+        border-right: $text-color 1px solid;
+        > li{
+            border-bottom: $text-color 1px solid;
+        }
+    }
+    header{
+        border-bottom: $text-color 1px solid;
+    }
+    .card, .single-card{
+        background-color: $bg-color_dark2;
+    }
+    .non-select{
+        opacity: 0.7;
+    }
+}

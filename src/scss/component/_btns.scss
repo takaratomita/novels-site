@@ -1,0 +1,61 @@
+// ボタンリセット
+input[type="submit"],.non-wrap_btn{
+    background: none;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.btn-wrap{
+  text-align: center;
+  margin: 50px 0;
+}
+
+.btn{
+  margin-bottom: 20px;
+  input[type="submit"], a ,button{
+    cursor: pointer;
+    border: 1px solid $text-color;
+    color: $text-color;
+    padding: 7px 35px;
+    transition: all 0.3s;
+    &:hover{
+      color: $bg-color;
+      background-color: $text-color;
+    }
+  }
+  
+  &.sliders-btn{
+    a{
+      border: 2px solid $text-color;
+      display: block;
+      box-sizing: border-box;
+      color: $text-color;
+      background: rgba(0, 0, 0, 0.4);
+      font-weight: bolder;
+      &::before{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        content: '';
+        color: $text-color4 !important;
+        background: $text-color !important;
+        transform-origin: center center;
+        transform: scale(0, 1);
+        transition: transform .3s;
+      }
+      &:hover{
+        background: transparent;
+        color: $bg-color;
+        &::before{
+          transform: scale(1, 1);
+        }
+      }
+  }
+  }
+}
